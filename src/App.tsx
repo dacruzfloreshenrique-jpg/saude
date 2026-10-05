@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { Header, Footer } from './components/Layout';
 import Home from './pages/Home';
@@ -23,7 +23,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-warm-white">
         <Header />
@@ -44,7 +44,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
