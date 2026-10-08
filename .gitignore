@@ -37,6 +37,11 @@ lerna-debug.log*
 
 # Vercel
 .vercel
+
+# Keep these directories for Vercel build system
+!functions/.gitkeep
+!static/.gitkeep
+!services/.gitkeep
 node_modules/
 .next/
 dist/

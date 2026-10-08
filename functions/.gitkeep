@@ -1,0 +1,3 @@
+# Vercel Functions Directory
+# This directory is required by Vercel's build system
+# Your Vite app doesn't need serverless functions, but Vercel checks for this directory

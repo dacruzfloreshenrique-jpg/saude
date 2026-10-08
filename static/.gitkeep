@@ -1,0 +1,3 @@
+# Vercel Static Directory
+# Static assets that should be served directly
+# Your Vite build outputs to dist/, but Vercel checks for this directory
