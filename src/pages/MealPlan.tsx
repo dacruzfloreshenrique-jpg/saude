@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, Calendar, BookOpen, ShoppingCart, ChefHat, Apple, Trophy, FileText, Gift } from 'lucide-react';
 import { trackProductCTA } from '../utils/analytics';
-import { EmailCaptureForm } from './Home';
+import { MailerLiteForm } from '../components/MailerLiteForm';
 
 const GUMROAD_URL = 'https://floreshenrique.gumroad.com/l/ssuoev';
 
@@ -142,7 +142,7 @@ export default function MealPlan() {
         <div className="bg-cream rounded-2xl p-8 text-center">
           <h3 className="font-serif text-xl text-forest mb-2">Not ready yet? Try a free sample.</h3>
           <p className="text-charcoal-light text-sm mb-4">Get a free 7-day high-protein starter plan via email.</p>
-          <EmailCaptureForm compact />
+          <MailerLiteForm compact />
         </div>
       </section>
     </div>

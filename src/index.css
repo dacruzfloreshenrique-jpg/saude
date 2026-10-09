@@ -109,3 +109,84 @@ body {
   background-color: var(--color-sage-light);
   color: var(--color-forest);
 }
+
+/* MailerLite Form Integration Styles */
+.mailerlite-form-wrapper {
+  /* Isola os estilos do MailerLite para não conflitar com o design */
+  position: relative;
+}
+
+.mailerlite-form-wrapper .ml-embedded {
+  /* Garante que o formulário do MailerLite seja responsivo */
+  width: 100%;
+  max-width: 100%;
+}
+
+.mailerlite-form-wrapper .ml-embedded form {
+  /* Ajusta o layout do formulário para ficar centralizado */
+  max-width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.mailerlite-form-wrapper .ml-embedded input[type="email"],
+.mailerlite-form-wrapper .ml-embedded input[type="text"] {
+  /* Estiliza os inputs para combinar com o design */
+  border-radius: 9999px !important;
+  border: 1px solid var(--color-beige) !important;
+  padding: 0.75rem 1.25rem !important;
+  font-size: 0.875rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.mailerlite-form-wrapper .ml-embedded input[type="email"]:focus,
+.mailerlite-form-wrapper .ml-embedded input[type="text"]:focus {
+  border-color: var(--color-sage) !important;
+  box-shadow: 0 0 0 3px rgba(139, 158, 126, 0.3) !important;
+  outline: none !important;
+}
+
+.mailerlite-form-wrapper .ml-embedded button[type="submit"],
+.mailerlite-form-wrapper .ml-embedded .ml-form-embedSubmit button {
+  /* Estiliza o botão para combinar com o design */
+  background-color: var(--color-forest) !important;
+  color: white !important;
+  border-radius: 9999px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  white-space: nowrap !important;
+}
+
+.mailerlite-form-wrapper .ml-embedded button[type="submit"]:hover,
+.mailerlite-form-wrapper .ml-embedded .ml-form-embedSubmit button:hover {
+  background-color: var(--color-forest-light) !important;
+  transform: scale(0.98) !important;
+}
+
+.mailerlite-form-wrapper .ml-embedded .ml-form-embedContent h4,
+.mailerlite-form-wrapper .ml-embedded .ml-form-embedContent p {
+  /* Ajusta a tipografia para combinar com o design */
+  color: var(--color-charcoal) !important;
+  font-family: var(--font-sans) !important;
+}
+
+.mailerlite-form-wrapper .ml-embedded .ml-form-embedContent h4 {
+  font-family: var(--font-serif) !important;
+  color: var(--color-forest) !important;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 640px) {
+  .mailerlite-form-wrapper .ml-embedded form {
+    flex-direction: column !important;
+  }
+  
+  .mailerlite-form-wrapper .ml-embedded input[type="email"],
+  .mailerlite-form-wrapper .ml-embedded input[type="text"],
+  .mailerlite-form-wrapper .ml-embedded button[type="submit"] {
+    width: 100% !important;
+  }
+}
