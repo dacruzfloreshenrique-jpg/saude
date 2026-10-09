@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Clock, UtensilsCrossed, Zap, Sparkles } from 'lucide-react';
 import { trackProductCTA } from '../utils/analytics';
+import { MailerLiteForm } from '../components/MailerLiteForm';
 
 const GUMROAD_URL = 'https://floreshenrique.gumroad.com/l/ssuoev';
 
@@ -233,7 +234,7 @@ export default function Home() {
           <p className="text-charcoal-light mb-6 max-w-md mx-auto">
             Get a week of simple, high-protein meals delivered to your inbox. No spam, just useful content.
           </p>
-          <EmailCaptureForm />
+          <MailerLiteForm />
         </div>
       </section>
     </div>
